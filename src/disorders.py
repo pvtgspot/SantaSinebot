@@ -12,7 +12,7 @@ def disorder(xs):
     n = len(xs)
     a = xs.copy()
     u = n
-    mark = [False] * len(xs)
+    mark = [False] * n
     i = n - 1
     while u >= 2:
         if not mark[i]:
