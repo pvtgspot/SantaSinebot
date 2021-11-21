@@ -2,7 +2,8 @@ version: '3.8'
 
 services:
   sinebot:
-    image: python:3.8
+    context: .
+    image: sinebot
     environment:
       - BOT_TOKEN=$BOT_TOKEN
     ports:
