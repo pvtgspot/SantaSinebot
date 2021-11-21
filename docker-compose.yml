@@ -4,7 +4,6 @@ services:
   sinebot:
     build:
       context: .
-      image: sinebot
     environment:
       - BOT_TOKEN=$BOT_TOKEN
     ports:
