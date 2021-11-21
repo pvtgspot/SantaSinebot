@@ -2,8 +2,9 @@ version: '3.8'
 
 services:
   sinebot:
-    context: .
-    image: sinebot
+    build:
+      context: .
+      image: sinebot
     environment:
       - BOT_TOKEN=$BOT_TOKEN
     ports:
