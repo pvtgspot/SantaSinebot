@@ -133,4 +133,4 @@ pyvenv.cfg
 
 # App data
 
-userdata/
+user_ids
