@@ -1,4 +1,5 @@
 import app
 
-app = app.App()
-app.run()
+
+bot = app.App()
+bot.run()
