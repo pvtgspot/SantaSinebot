@@ -134,3 +134,4 @@ pyvenv.cfg
 # App data
 
 user_ids
+dump/
