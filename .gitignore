@@ -130,3 +130,7 @@ dmypy.json
 
 Scripts
 pyvenv.cfg
+
+# App data
+
+userdata/
