@@ -132,6 +132,6 @@ Scripts
 pyvenv.cfg
 
 # App data
-
+data/
 user_ids
 dump/
