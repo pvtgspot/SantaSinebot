@@ -3,6 +3,7 @@ import asyncio
 
 from dotenv import load_dotenv
 from aiogram import Bot, Dispatcher
+from util import get_storage_file_path
 from handler import *
 
 
@@ -13,8 +14,8 @@ class App:
 
         self.BOT_TOKEN = os.getenv("BOT_TOKEN")
 
-        STORAGE_FILE = os.environ.get("STORAGE_FILE")
-        with open(STORAGE_FILE, "a+"):
+        STORAGE_PATH = get_storage_file_path()
+        with open(STORAGE_PATH, "a+"):
             pass
 
     async def _process(self):

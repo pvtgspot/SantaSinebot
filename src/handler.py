@@ -14,7 +14,7 @@ def read_ids(storage_file):
 
     return ids
 
-
+ 
 def write_id(storage_file, id):
     storage_file.write(f"{id},")
 
