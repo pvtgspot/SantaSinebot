@@ -1,6 +1,8 @@
 import os
 
+from pathlib import Path
 from aiogram import types
+from util import get_storage_file_path
 
 
 def read_ids(storage_file):
@@ -18,7 +20,7 @@ def write_id(storage_file, id):
 
 
 async def start_handler(event: types.Message):
-    STORAGE_FILE = os.environ.get("STORAGE_FILE")
+    STORAGE_PATH = get_storage_file_path()
 
     user_id = event.from_user.id
     username = event.from_user.get_mention(as_html=True)
@@ -28,7 +30,7 @@ async def start_handler(event: types.Message):
 
     msg = f"Привет, {username}, "
 
-    with open(STORAGE_FILE, "r+") as f:
+    with open(STORAGE_PATH, "r+") as f:
         ids = read_ids(f)
         enrolled = False
 
