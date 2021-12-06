@@ -48,3 +48,16 @@ async def start_handler(event: types.Message):
         msg,
         parse_mode=types.ParseMode.HTML,
     )
+
+async def shuffle_handler(event: types.Message):
+    STORAGE_PATH = get_storage_file_path()
+
+    user_id = event.from_user.id
+
+    no_access_msg = "У вас нет прав на выполнение данной операции"
+    success_msg = "ты теперь в списке участников Секретного Сасанты..."
+
+    await event.answer(
+        msg,
+        parse_mode=types.ParseMode.HTML,
+    )
