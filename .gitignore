@@ -135,3 +135,6 @@ pyvenv.cfg
 data/
 user_ids
 dump/
+
+#Misc
+.vscode/
