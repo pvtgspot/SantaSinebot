@@ -1,5 +1,5 @@
-import app
+from app import SSBot
 
 
-bot = app.App()
+bot = SSBot()
 bot.run()
